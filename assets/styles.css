@@ -642,13 +642,13 @@ button,
     flex-grow: 1;
 }
 
-.dish-nutrition {
+/*.dish-nutrition {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
     padding-top: 10px;
     border-top: 1px solid var(--border, #eee);
-}
+}*/
 
 .nutrition-item {
     display: flex;
@@ -805,25 +805,25 @@ button,
 }
 
 .dish-name {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 650;
+    color: #D4AF37;
     margin: 0;
     line-height: 1.4;
 }
 
 .dish-price {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: #d4af37;
     white-space: nowrap;
     margin-left: 10px;
 }
 
 .dish-ingredients {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #666;
     line-height: 1.5;
@@ -836,6 +836,8 @@ button,
     gap: 24px;
     margin-bottom: 16px;
     min-height: 24px; /* Ensure consistent height when not empty */
+	justify-content: center; /* centre horizontalement */
+/*	align-items: center;     * centre verticalement */ 
 }
 
 /* Hide nutrition section when empty */
@@ -850,7 +852,7 @@ button,
     display: flex;
     align-items: center;
     gap: 6px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     color: #888;
 }
