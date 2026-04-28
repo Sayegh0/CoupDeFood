@@ -5,13 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
-    <title>Coup de Food - Menu</title>
-    
+    <title>Coup De Food — Restaurant Healthy Abidjan | Menu &amp; Livraison</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Coup De Food, restaurant healthy à Abidjan : salades, bagels, sandwichs, toasts et desserts gourmands &amp; équilibrés. Commandez en ligne via WhatsApp.">
+    <meta name="keywords" content="restaurant healthy Abidjan, salade, bagel, sandwich, toast, dessert, livraison, Coup De Food">
+    <meta name="author" content="Coup De Food">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sayegh0.github.io/CoupDeFood/">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Coup De Food">
+    <meta property="og:title" content="Coup De Food — Restaurant Healthy Abidjan">
+    <meta property="og:description" content="Une cuisine saine, gourmande et sans compromis. Découvrez notre menu et commandez en ligne.">
+    <meta property="og:url" content="https://sayegh0.github.io/CoupDeFood/">
+    <meta property="og:image" content="https://sayegh0.github.io/CoupDeFood/assets/images/Dessert-Hero1.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Coup De Food — Restaurant Healthy Abidjan">
+    <meta name="twitter:description" content="Une cuisine saine, gourmande et sans compromis. Menu &amp; commande en ligne.">
+    <meta name="twitter:image" content="https://sayegh0.github.io/CoupDeFood/assets/images/Dessert-Hero1.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+
     <!-- DNS Prefetch for external domains -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    
+
     <!-- Preconnect to required origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,28 +63,71 @@
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous"
           referrerpolicy="no-referrer" />
+
+    <!-- Données structurées Schema.org : Restaurant + Menu -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Coup De Food",
+      "description": "Restaurant healthy à Abidjan proposant salades, bagels, sandwichs, toasts et desserts gourmands & équilibrés.",
+      "url": "https://sayegh0.github.io/CoupDeFood/",
+      "image": "https://sayegh0.github.io/CoupDeFood/assets/images/Dessert-Hero1.jpg",
+      "logo": "https://sayegh0.github.io/CoupDeFood/assets/images/logo.png",
+      "telephone": "+2250708305100",
+      "servesCuisine": ["Healthy", "Méditerranéenne", "Internationale"],
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue Angeline Nadie",
+        "addressLocality": "Abidjan",
+        "addressCountry": "CI"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 5.2979405,
+        "longitude": -3.988237
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "11:00",
+        "closes": "23:00"
+      }],
+      "sameAs": [
+        "https://www.instagram.com/coupdefood.healthy",
+        "https://www.tiktok.com/@coup_de_food0"
+      ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Titre principal pour SEO/lecteurs d'écran -->
+    <h1 class="sr-only">Coup De Food — Restaurant Healthy à Abidjan</h1>
+
     <!-- Header Fixe -->
 <header class="header">
   <div class="header-container">
-    <div class="logo-container" id="logo">
+    <div class="logo-container" id="logo" role="button" tabindex="0" aria-label="Retour à l'accueil">
 	<!--<h1 class="logo">Coup De Food</h1> -->
-      <img src="assets/images/logo.png" alt="Logo" class="logo" />
+      <img src="assets/images/logo.png" alt="Coup De Food" class="logo" width="160" height="48" />
       <!--<p class="slogan">Healthy Food</p>-->
     </div>
 
-    <nav class="nav-categories" id="navCategories">
+    <nav class="nav-categories" id="navCategories" aria-label="Catégories du menu">
       <!-- Catégories seront ajoutées dynamiquement -->
     </nav>
 
     <div class="header-actions">
       <button id="searchToggle" class="search-toggle" aria-label="Rechercher" aria-expanded="false">
-        <i class="fas fa-search"></i>
+        <i class="fas fa-search" aria-hidden="true"></i>
       </button>
-      <button id="themeToggle" class="theme-toggle">
-        <i class="fas fa-moon"></i>
-        <i class="fas fa-sun" style="display: none;"></i>
+      <button id="shareToggle" class="share-toggle" aria-label="Partager le menu">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
+      </button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème clair/sombre" aria-pressed="false">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+        <i class="fas fa-sun" aria-hidden="true" style="display: none;"></i>
       </button>
     </div>
   </div>
@@ -104,10 +173,10 @@
     </div>
 
     <!-- Icône de panier flottante -->
-    <div class="floating-cart" id="cartIcon">
-        <i class="fas fa-shopping-cart"></i>
-        <span class="cart-count" id="cartCount">0</span>
-    </div>
+    <button class="floating-cart" id="cartIcon" type="button" aria-label="Voir le panier">
+        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        <span class="cart-count" id="cartCount" aria-live="polite" aria-label="Articles dans le panier">0</span>
+    </button>
 	
 
     <!-- Contenu Principal -->
@@ -181,6 +250,12 @@
         <i class="fas fa-check-circle"></i>
         <span>Ajouté au Panier</span>
     </div>
+
+    <!-- Notification générique (partage, copie, etc.) -->
+    <div class="toast-notification" id="toastNotification" role="status" aria-live="polite">
+        <i class="fas fa-check-circle" aria-hidden="true"></i>
+        <span id="toastNotificationText">Lien copié !</span>
+    </div>
     
     <!-- Notification de confirmation de vidage du panier -->
     <div class="clear-cart-confirmation" id="clearCartConfirmation">
@@ -203,7 +278,7 @@
     },
     {
       "name": "Sandwichs",
-      "image": "assets/images/Sandwich.jpg"
+      "image": "assets/images/sandwich.jpg"
     },
     {
       "name": "Bagels",
@@ -271,7 +346,7 @@
     "calories": 520,
     "proteins": 25,
     "price": 11500,
-    "image": "assets/images/salad-tuna-pasta.jpg"
+    "image": "assets/images/Salad-Tuna-Pasta.jpg"
   },
   {
     "id": 17,
@@ -490,7 +565,7 @@
     "type": "Soda Sans Sucre",
     "volume": "33cl",
     "price": 1000,
-    "image": "assets/images/Boissons-coca-zero.jpg"
+    "image": "assets/images/Boissons-coca-ZERO.jpg"
   },
   {
     "id": 62,
@@ -508,7 +583,7 @@
     "type": "Soda Citron-Lime",
     "volume": "33cl",
     "price": 1000,
-    "image": "assets/images/Boissons-sprite.jpg"
+    "image": "assets/images/boissons-sprite.jpg"
   },
   {
     "id": 64,
@@ -517,7 +592,7 @@
     "type": "Eau gazeuse naturelle",
     "volume": "33cl",
     "price": 2000,
-    "image": "assets/images/Boissons-perrier.jpg"
+    "image": "assets/images/Boissons-Perrier.jpg"
   },
   {
     "id": 65,
@@ -526,7 +601,7 @@
     "type": "Boisson Énergisante",
     "volume": "25cl",
     "price": 2000,
-    "image": "assets/images/Boissons-redbull.jpg"
+    "image": "assets/images/Boissons-RedBull.jpg"
   },
   {
     "id": 66,
@@ -535,7 +610,7 @@
     "type": "Thé glacé",
     "volume": "33cl",
     "price": 2000,
-    "image": "assets/images/Boissons-icetea.jpg"
+    "image": "assets/images/Boissons-Icetea.jpg"
   },
   {
     "id": 67,
@@ -544,7 +619,7 @@
     "type": "Thé glacé Sans Sucre",
     "volume": "33cl",
     "price": 2000,
-    "image": "assets/images/boissons-icetea-zero.jpg"
+    "image": "assets/images/Boissons-Icetea-ZERO.jpg"
   },
   {
     "id": 68,
@@ -780,8 +855,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-    <!-- SheetJS for Excel import/export -->
-    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <!-- SheetJS for Excel import/export — chargé dynamiquement après déverrouillage admin (voir scripts.js) -->
     
     <!-- Font Loading Optimization -->
     <script>
@@ -945,7 +1019,6 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
 
-    <!-- Search Functionality -->
-    <script src="assets/search.js"></script>
+    <!-- Search Functionality (intégrée dans scripts.js) -->
 </body>
 </html>
